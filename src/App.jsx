@@ -1,43 +1,32 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="bg-neutral-800 min-h-screen text-center flex flex-col items-center justify-center">
-        <div className="flex items-center justify-center">
-          <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="w-24 h-24" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img
-              src={reactLogo}
-              className="w-24 h-24 animate-spin"
-              alt="React logo"
-              style={{ animationDuration: "10s" }}
-            />
-          </a>
+      <div className="bg-gray-100 min-h-screen p-6">
+        {/* card begin */}
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow text-5xl flex items-center justify-center hover:scale-105 duration-300 hover:border hover:bg-gray-200 hover:shadow-lg transition-shadow">
+            card
+          </div>
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow text-5xl flex items-center justify-center hover:scale-105 duration-300 hover:border hover:bg-gray-200 hover:shadow-lg transition-shadow">
+            card
+          </div>
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow text-5xl flex items-center justify-center hover:scale-105 duration-300 hover:border hover:bg-gray-200 hover:shadow-lg transition-shadow">
+            card
+          </div>
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow text-5xl flex items-center justify-center hover:scale-105 duration-300 hover:border hover:bg-gray-200 hover:shadow-lg transition-shadow">
+            card
+          </div>
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow text-5xl flex items-center justify-center hover:scale-105 duration-300 hover:border hover:bg-gray-200 hover:shadow-lg transition-shadow">
+            card
+          </div>
+          <div className="bg-white p-6 min-h-40 rounded-lg shadow text-5xl flex items-center justify-center hover:scale-105 duration-300 hover:border hover:bg-gray-200 hover:shadow-lg transition-shadow">
+            card
+          </div>
+         
         </div>
-        <h1 className="text-white text-5xl font-bold mb-16">Vite + React</h1>
-        <h3>Danendra Althaf Yuganfa</h3>
-        <div className="text-sm space-y-6 mb-8">
-          <button
-            onClick={() => setCount((count) => count + 1)}
-            className="bg-neutral-900 text-white py-2 px-6 rounded-lg text-lg"
-          >
-            count is {count}
-          </button>
-          <p className="text-neutral-400">
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="text-neutral-500 read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
+        {/* card end */}
       </div>
     </>
   );
