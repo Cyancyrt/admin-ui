@@ -33,7 +33,7 @@ function Exercise() {
   return (
     <>
       <div className="min-h-screen bg-gray-100 p-6">
-        <h1 className="text-3xl font-bold text-center mb-6 text-blue-700">
+        <h1 className="text-3xl font-bold text-center mb-1 text-blue-700">
           <a
             href="#"
             onClick={(e) => {
@@ -44,6 +44,9 @@ function Exercise() {
             {clicked ? "User Card" : "Post Card"}
           </a>
         </h1>
+        <h5 className="text-center mb-6 text-gray-600">
+          Untuk mengubah konteks kartu, harap tekan title di atas ini
+        </h5>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {clicked
             ? user.map((user, index) => <UserCard key={index} {...user} />)
